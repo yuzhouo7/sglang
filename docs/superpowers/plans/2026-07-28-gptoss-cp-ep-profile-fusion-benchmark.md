@@ -198,6 +198,7 @@ python3 benchmark/gpt_oss/compare_bf16_cp_ep_results.py \
   Common settings:
 
   ```text
+  SGLANG_ALLOW_OVERWRITE_LONGER_CONTEXT_LEN=1
   --context-length 139264
   --chunked-prefill-size 131072
   --max-prefill-tokens 131072
@@ -577,6 +578,7 @@ def zigzag_shard_rows(
   Use:
 
   ```text
+  SGLANG_ALLOW_OVERWRITE_LONGER_CONTEXT_LEN=1
   --model-path /scratch/models/gpt-oss-120b-bf16
   --attention-backend trtllm_mha
   --moe-runner-backend flashinfer_trtllm_routed
@@ -685,6 +687,7 @@ def zigzag_shard_rows(
   Common:
 
   ```text
+  SGLANG_ALLOW_OVERWRITE_LONGER_CONTEXT_LEN=1
   --context-length 270336
   --chunked-prefill-size 262144
   --max-prefill-tokens 262144
